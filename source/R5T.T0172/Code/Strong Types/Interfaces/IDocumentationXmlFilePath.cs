@@ -1,7 +1,7 @@
 using System;
 
-using R5T.T0150;
-using R5T.T0175;
+using R5T.T0178;
+using R5T.T0181;
 
 
 namespace R5T.T0172
@@ -15,7 +15,8 @@ namespace R5T.T0172
     /// Be sure to also add some documentation to a member (type or method) in the assembly so that there is actually documentation for the documentation file.
     /// </remarks>
     [StrongTypeMarker]
-    public interface IDocumentationXmlFilePath : IFilePath, IStrongTypeMarker
+    public interface IDocumentationXmlFilePath : IStrongTypeMarker,
+        IXmlFilePath
     {
     }
 }

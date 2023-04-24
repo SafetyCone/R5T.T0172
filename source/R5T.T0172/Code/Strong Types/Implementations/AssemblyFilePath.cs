@@ -1,14 +1,15 @@
 using System;
 
-using R5T.T0150;
-using R5T.T0151;
+using R5T.T0178;
+using R5T.T0179;
 
 
 namespace R5T.T0172
 {
     /// <inheritdoc cref="IAssemblyFilePath"/>
-    [StrongTypeMarker]
-    public class AssemblyFilePath : TypedString, IStrongTypeMarker, IAssemblyFilePath
+    [StrongTypeImplementationMarker]
+    public class AssemblyFilePath : TypedBase<string>, IStrongTypeMarker,
+        IAssemblyFilePath
     {
         public AssemblyFilePath(string value)
             : base(value)

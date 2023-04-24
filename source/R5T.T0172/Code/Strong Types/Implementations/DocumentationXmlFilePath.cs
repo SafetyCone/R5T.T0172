@@ -1,14 +1,15 @@
 using System;
 
-using R5T.T0150;
-using R5T.T0151;
+using R5T.T0178;
+using R5T.T0179;
 
 
 namespace R5T.T0172
 {
     /// <inheritdoc cref="IDocumentationXmlFilePath"/>
-    [StrongTypeMarker]
-    public class DocumentationXmlFilePath : TypedString, IStrongTypeMarker, IDocumentationXmlFilePath
+    [StrongTypeImplementationMarker]
+    public class DocumentationXmlFilePath : TypedBase<string>, IStrongTypeMarker,
+        IDocumentationXmlFilePath
     {
         public DocumentationXmlFilePath(string value)
             : base(value)

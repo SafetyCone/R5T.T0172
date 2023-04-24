@@ -5,22 +5,42 @@ namespace R5T.T0172.Extensions
 {
     public static class StringExtensions
     {
-        public static AssemblyFilePath ToAssemblyFilePath(this string value)
+        public static IAssemblyFilePath ToAssemblyFilePath(this string value)
         {
             return Instances.StringOperator.ToAssemblyFilePath(value);
         }
 
-        public static DocumentationXmlFilePath ToDocumentationXmlFilePath(this string value)
+        public static ICodeFilePath ToCodeFilePath(this string value)
+        {
+            return Instances.StringOperator.ToCodeFilePath(value);
+        }
+
+        public static ICSharpFilePath ToCSharpFilePath(this string value)
+        {
+            return Instances.StringOperator.ToCSharpFilePath(value);
+        }
+
+        public static IDocumentationXmlFilePath ToDocumentationXmlFilePath(this string value)
         {
             return Instances.StringOperator.ToDocumentationXmlFilePath(value);
         }
 
-        public static ProjectFilePath ToProjectFilePath(this string value)
+        public static IProjectDirectoryPath ToProjectDirectoryPath(this string value)
+        {
+            return Instances.StringOperator.ToProjectDirectoryPath(value);
+        }
+
+        public static IProjectFilePath ToProjectFilePath(this string value)
         {
             return Instances.StringOperator.ToProjectFilePath(value);
         }
 
-        public static SolutionFilePath ToSolutionFilePath(this string value)
+        public static IProjectDirectoryRelativePath ToProjectDirectoryRelativePath(this string value)
+        {
+            return Instances.StringOperator.ToProjectDirectoryRelativePath(value);
+        }
+
+        public static ISolutionFilePath ToSolutionFilePath(this string value)
         {
             return Instances.StringOperator.ToSolutionFilePath(value);
         }
