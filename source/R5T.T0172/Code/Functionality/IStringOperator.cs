@@ -38,6 +38,12 @@ namespace R5T.T0172
             return output;
         }
 
+        public IProjectFileName ToProjectFileName(string value)
+        {
+            var output = new ProjectFileName(value);
+            return output;
+        }
+
         public IProjectFilePath ToProjectFilePath(string value)
         {
             var output = new ProjectFilePath(value);
@@ -47,6 +53,18 @@ namespace R5T.T0172
         public IProjectDirectoryRelativePath ToProjectDirectoryRelativePath(string value)
         {
             var output = new ProjectDirectoryRelativePath(value);
+            return output;
+        }
+
+        public ISolutionDirectoryPath ToSolutionDirectoryPath(string value)
+        {
+            var output = new SolutionDirectoryPath(value);
+            return output;
+        }
+
+        public ISolutionFileName ToSolutionFileName(string value)
+        {
+            var output = new SolutionFileName(value);
             return output;
         }
 

@@ -30,6 +30,11 @@ namespace R5T.T0172.Extensions
             return Instances.StringOperator.ToProjectDirectoryPath(value);
         }
 
+        public static IProjectFileName ToProjectFileName(this string value)
+        {
+            return Instances.StringOperator.ToProjectFileName(value);
+        }
+
         public static IProjectFilePath ToProjectFilePath(this string value)
         {
             return Instances.StringOperator.ToProjectFilePath(value);
@@ -38,6 +43,16 @@ namespace R5T.T0172.Extensions
         public static IProjectDirectoryRelativePath ToProjectDirectoryRelativePath(this string value)
         {
             return Instances.StringOperator.ToProjectDirectoryRelativePath(value);
+        }
+
+        public static ISolutionDirectoryPath ToSolutionDirectoryPath(this string value)
+        {
+            return Instances.StringOperator.ToSolutionDirectoryPath(value);
+        }
+
+        public static ISolutionFileName ToSolutionFileName(this string value)
+        {
+            return Instances.StringOperator.ToSolutionFileName(value);
         }
 
         public static ISolutionFilePath ToSolutionFilePath(this string value)
