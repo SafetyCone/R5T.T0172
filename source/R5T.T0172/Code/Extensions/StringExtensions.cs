@@ -20,6 +20,11 @@ namespace R5T.T0172.Extensions
             return Instances.StringOperator.ToCSharpFilePath(value);
         }
 
+        public static ICSharpFileName ToCSharpFileName(this string value)
+        {
+            return Instances.StringOperator.ToCSharpFileName(value);
+        }
+
         public static IDocumentationXmlFilePath ToDocumentationXmlFilePath(this string value)
         {
             return Instances.StringOperator.ToDocumentationXmlFilePath(value);
@@ -38,6 +43,11 @@ namespace R5T.T0172.Extensions
         public static IProjectFilePath ToProjectFilePath(this string value)
         {
             return Instances.StringOperator.ToProjectFilePath(value);
+        }
+
+        public static IProjectDirectoryRelativeDirectoryPath ToProjectDirectoryRelativeDirectoryPath(this string value)
+        {
+            return Instances.StringOperator.ToProjectDirectoryRelativeDirectoryPath(value);
         }
 
         public static IProjectDirectoryRelativePath ToProjectDirectoryRelativePath(this string value)

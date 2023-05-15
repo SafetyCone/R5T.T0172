@@ -20,6 +20,12 @@ namespace R5T.T0172
             return output;
         }
 
+        public ICSharpFileName ToCSharpFileName(string value)
+        {
+            var output = new CSharpFileName(value);
+            return output;
+        }
+
         public ICSharpFilePath ToCSharpFilePath(string value)
         {
             var output = new CSharpFilePath(value);
@@ -47,6 +53,12 @@ namespace R5T.T0172
         public IProjectFilePath ToProjectFilePath(string value)
         {
             var output = new ProjectFilePath(value);
+            return output;
+        }
+
+        public IProjectDirectoryRelativeDirectoryPath ToProjectDirectoryRelativeDirectoryPath(string value)
+        {
+            var output = new ProjectDirectoryRelativeDirectoryPath(value);
             return output;
         }
 
