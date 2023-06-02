@@ -11,7 +11,7 @@ namespace R5T.T0172
     /// </summary>
     [StrongTypeMarker]
     public interface ICSharpFilePath : IStrongTypeMarker,
-        ITextFilePath
+        ICodeFilePath
     {
     }
 }
