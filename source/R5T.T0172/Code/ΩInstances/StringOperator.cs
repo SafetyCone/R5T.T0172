@@ -1,7 +1,7 @@
 using System;
 
 
-namespace R5T.T0172
+namespace R5T.T0172.Extensions
 {
     public class StringOperator : IStringOperator
     {
