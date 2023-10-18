@@ -3,6 +3,8 @@ using System;
 using R5T.T0178;
 using R5T.T0181;
 
+using R5T.T0172.Extensions;
+
 
 namespace R5T.T0172
 {
@@ -18,5 +20,14 @@ namespace R5T.T0172
     public interface IDocumentationXmlFilePath : IStrongTypeMarker,
         IXmlFilePath
     {
+        #region Static
+
+        public static IDocumentationXmlFilePath ToDocumentationXmlFilePath(string value)
+        {
+            var output = value.ToDocumentationXmlFilePath();
+            return output;
+        }
+
+        #endregion
     }
 }

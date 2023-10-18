@@ -3,6 +3,8 @@ using System;
 using R5T.T0178;
 using R5T.T0181;
 
+using R5T.T0172.Extensions;
+
 
 namespace R5T.T0172
 {
@@ -13,5 +15,14 @@ namespace R5T.T0172
     public interface IAssemblyFilePath : IStrongTypeMarker,
         IDllFilePath
     {
+        #region Static
+
+        public static IAssemblyFilePath ToAssemblyFilePath(string value)
+        {
+            var output = value.ToAssemblyFilePath();
+            return output;
+        }
+
+        #endregion
     }
 }
