@@ -3,11 +3,11 @@ using System;
 using R5T.T0142;
 
 
-namespace R5T.T0172
+namespace R5T.T0172.N001
 {
     [DataTypeMarker]
     public interface IHasProjectFilePath
     {
-        IProjectFilePath ProjectFilePath { get; }
+        string ProjectFilePath { get; }
     }
 }
